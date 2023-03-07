@@ -16,3 +16,6 @@ rootProject.name = "AirPollution"
 include ':app'
 include ':data'
 include ':domain'
+include ':core'
+include ':core:architecture'
+include ':core:networking'

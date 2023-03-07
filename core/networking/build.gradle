@@ -1,0 +1,20 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'com.example.networking'
+    compileSdk 33
+}
+
+dependencies {
+    implementation libs.hilt.android
+    implementation libs.moshi
+    implementation libs.retrofit.moshi
+    implementation libs.retrofit
+    implementation libs.timber
+    kapt libs.hilt.compiler
+}
