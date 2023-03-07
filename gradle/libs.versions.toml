@@ -1,0 +1,84 @@
+[versions]
+# Define the dependency versions
+# Android/Kotlin
+kotlin = "1.7.20"
+gradle-plugin = "7.4.1"
+# Quality
+detekt = "1.22.0"
+# Testing
+junit = "4.13.2"
+junit-ext = "1.1.3"
+androidx-test = "1.5.0"
+mockito = "4.5.1"
+mockitoK = "2.2.0"
+powermock = "2.0.9"
+# AndroidX
+androidx-fragment = "1.5.2"
+androidx-appcompat = "1.5.1"
+androidx-core = "1.9.0"
+androidx-splash-screen = "1.0.0-beta02"
+androidx-lifecycle = "2.5.1"
+androidx-navigation = "2.5.3"
+android-material = "1.8.0"
+android-swipe-refresh = "1.1.0"
+# RX
+rxjava = "3.0.0"
+rxandroid = "3.0.6"
+rxkotlin = "3.0.1"
+rxbinding = "4.0.0"
+# DI
+hilt = "2.44"
+# Networking
+retrofit = "2.9.0"
+# JSON parsing
+moshi = "1.14.0"
+# Logger
+timber = "5.0.1"
+# Coil
+coil = "1.3.2"
+# Database
+room = "2.4.3"
+
+[libraries]
+# Define the libraries
+# Testing
+junit = { module = "junit:junit", version.ref = "junit" }
+junit-ext = { module = "androidx.test.ext:junit", version.ref = "junit-ext" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-kotlin = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin", version.ref = "mockitoK" }
+androidx-test = { module = "androidx.test:core", version.ref = "androidx-test" }
+powermock-core = { module = "org.powermock:powermock-core", version.ref = "powermock" }
+powermock-module = { module = "org.powermock:powermock-module-junit4", version.ref = "powermock" }
+powermock-api = { module = "org.powermock:powermock-api-mockito2", version.ref = "powermock" }
+# AndroidX
+androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "androidx-fragment" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx-appcompat" }
+androidx-core = { module = "androidx.core:core", version.ref = "androidx.core" }
+androidx-splash-screen = { module = "androidx.core:core-splashscreen", version.ref = "androidx-splash-screen" }
+androidx-navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "androidx.navigation" }
+androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "androidx.navigation" }
+android-material = { module = "com.google.android.material:material", version.ref = "android-material" }
+android-swipe-refresh = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "android-swipe-refresh" }
+# Rx
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava"}
+rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroid"}
+rxkotlin = { module = "io.reactivex.rxjava3:rxkotlin", version.ref = "rxkotlin"}
+rxbinding = { module = "com.jakewharton.rxbinding4:rxbinding", version.ref = "rxbinding"}
+# DI
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+# Networking
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+# JSON Parsing
+moshi = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+# Quality
+detekt = { module = "io.gitlab.arturbosch.detekt:detekt-cli", version.ref = "detekt" }
+# Logger
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+# Coil
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+# Database
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+

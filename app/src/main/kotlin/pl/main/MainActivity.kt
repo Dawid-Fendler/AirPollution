@@ -1,4 +1,4 @@
-package pl.airpollution
+package pl.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
