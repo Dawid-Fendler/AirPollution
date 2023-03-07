@@ -6,6 +6,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import okhttp3.OkHttpClient
 import pl.networking.Constants.BASE_URL
 import pl.networking.Constants.CALL_TIMEOUT_SECONDS
@@ -48,6 +49,7 @@ object NetworkModule {
             .Builder()
             .baseUrl(BASE_URL)
             .client(okHttpClient)
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .addConverterFactory(moshiConverterFactory)
             .build()
     }

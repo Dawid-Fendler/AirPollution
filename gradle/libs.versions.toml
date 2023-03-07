@@ -23,7 +23,7 @@ android-material = "1.8.0"
 android-swipe-refresh = "1.1.0"
 # RX
 rxjava = "3.0.0"
-rxandroid = "3.0.6"
+rxandroid = "3.0.0"
 rxkotlin = "3.0.1"
 rxbinding = "4.0.0"
 # DI
@@ -60,16 +60,17 @@ androidx-navigation-ui = { module = "androidx.navigation:navigation-ui-ktx", ver
 android-material = { module = "com.google.android.material:material", version.ref = "android-material" }
 android-swipe-refresh = { module = "androidx.swiperefreshlayout:swiperefreshlayout", version.ref = "android-swipe-refresh" }
 # Rx
-rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava"}
-rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroid"}
-rxkotlin = { module = "io.reactivex.rxjava3:rxkotlin", version.ref = "rxkotlin"}
-rxbinding = { module = "com.jakewharton.rxbinding4:rxbinding", version.ref = "rxbinding"}
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava" }
+rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroid" }
+rxkotlin = { module = "io.reactivex.rxjava3:rxkotlin", version.ref = "rxkotlin" }
+rxbinding = { module = "com.jakewharton.rxbinding4:rxbinding", version.ref = "rxbinding" }
 # DI
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 # Networking
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+retrofit-rx = { module = "com.github.akarnokd:rxjava3-retrofit-adapter", version = "3.0.0" }
 # JSON Parsing
 moshi = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
 # Quality

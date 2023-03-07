@@ -15,6 +15,7 @@ dependencies {
     implementation libs.moshi
     implementation libs.retrofit.moshi
     implementation libs.retrofit
+    implementation libs.retrofit.rx
     implementation libs.timber
     kapt libs.hilt.compiler
 }
