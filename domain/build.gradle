@@ -18,4 +18,13 @@ dependencies {
     implementation libs.rxkotlin
     implementation libs.hilt.android
     kapt libs.hilt.compiler
+
+    testImplementation libs.junit
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.kotlin
+    testImplementation libs.androidx.test
+    testImplementation libs.powermock.core
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation libs.powermock.module
+    testImplementation libs.powermock.api
 }

@@ -1,6 +1,5 @@
 package pl.domain.usecase
 
-import android.util.Log
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
@@ -24,7 +23,6 @@ class GetStationsUseCase @Inject constructor(
                 }
             }
             .onErrorReturn {
-                Log.d("Testowo", "execute:$it")
                 Result.Failure
             }
             .observeOn(AndroidSchedulers.mainThread())

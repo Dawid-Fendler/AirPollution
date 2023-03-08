@@ -1,6 +1,5 @@
 package pl.domain.usecase
 
-import android.util.Log
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Single
 import io.reactivex.rxjava3.schedulers.Schedulers
@@ -17,10 +16,7 @@ class GetAirPollutionDetailsUseCase @Inject constructor(
         return repository
             .getAirPollutionDetails(input)
             .map { Result.Success(it) as Result }
-            .onErrorReturn {
-                Log.d("Testowo", "execute:$it")
-                Result.Failure as Result
-            }
+            .onErrorReturn { Result.Failure as Result }
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
     }

@@ -24,10 +24,20 @@ dependencies {
     implementation libs.androidx.fragment
     implementation libs.android.material
     implementation libs.rxjava
+    implementation libs.rxandroid
     implementation libs.androidx.navigation.fragment
     implementation libs.androidx.navigation.ui
     implementation libs.coil
     implementation libs.android.swipe.refresh
     implementation libs.hilt.android
     kapt libs.hilt.compiler
+
+    testImplementation libs.junit
+    testImplementation libs.mockito.core
+    testImplementation libs.mockito.kotlin
+    testImplementation libs.androidx.test
+    testImplementation libs.powermock.core
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation libs.powermock.module
+    testImplementation libs.powermock.api
 }
