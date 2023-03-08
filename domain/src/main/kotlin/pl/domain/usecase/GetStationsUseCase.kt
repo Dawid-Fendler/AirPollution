@@ -28,7 +28,7 @@ class GetStationsUseCase @Inject constructor(
     }
 
     sealed class Result {
-        data class Success(val data: List<Station>?) : Result()
+        data class Success(val data: List<Station>) : Result()
         object Failure : Result()
         object EmptyList : Result()
     }

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stations_empty_text">Not found any stations</string>
+    <string name="stations_refresh_screen_text">An error occurred, please swipe to refresh</string>
+</resources>

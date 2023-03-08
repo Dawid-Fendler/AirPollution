@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'pl.presentation.stations'
+    compileSdk 33
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(':core:architecture')
+    implementation project(':data')
+    implementation project(':domain')
+
+    implementation libs.androidx.appcompat
+    implementation libs.androidx.fragment
+    implementation libs.android.material
+    implementation libs.rxjava
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
+    implementation libs.coil
+    implementation libs.android.swipe.refresh
+    implementation libs.hilt.android
+    kapt libs.hilt.compiler
+}
