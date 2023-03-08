@@ -9,5 +9,14 @@
         android:id="@+id/stationsFragment"
         android:name="pl.stations.StationsFragment"
         android:label="StationsFragment"
-        tools:layout="@layout/fragment_stations" />
+        tools:layout="@layout/fragment_stations">
+        <action
+            android:id="@+id/action_stationsFragment_to_station_graph"
+            app:destination="@id/station_graph">
+            <argument
+                android:name="details"
+                app:argType="pl.domain.model.StationUiModel" />
+        </action>
+    </fragment>
+    <include app:graph="@navigation/station_graph" />
 </navigation>

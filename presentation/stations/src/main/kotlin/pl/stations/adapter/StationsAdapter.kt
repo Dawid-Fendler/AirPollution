@@ -1,4 +1,4 @@
-package pl.stations
+package pl.stations.adapter
 
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -9,7 +9,7 @@ import pl.domain.model.StationUiModel
 class StationsAdapter : RecyclerView.Adapter<StationsViewHolder>() {
 
     private var stations = emptyList<StationUiModel>()
-    var imageClickSubject: PublishSubject<Int> = PublishSubject.create()
+    var imageClickSubject: PublishSubject<StationUiModel> = PublishSubject.create()
         private set
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StationsViewHolder {

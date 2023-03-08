@@ -24,7 +24,10 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         navController = findNavController(R.id.nav_host_fragment)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        setupActionBarWithNavController(navController, AppBarConfiguration(setOf(R.id.stationsFragment)))
+        setupActionBarWithNavController(
+            navController,
+            AppBarConfiguration(setOf(pl.presentation.stations.R.id.stationsFragment))
+        )
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -1,4 +1,4 @@
-package pl.stations
+package pl.stations.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -11,17 +11,17 @@ class StationsViewHolder(
     private val binding: RowStationBinding
 ) : RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(result: StationUiModel, imageClickSubject: PublishSubject<Int>) {
+    fun bind(result: StationUiModel, imageClickSubject: PublishSubject<StationUiModel>) {
         binding.stationName.text = result.stationName
         initImageOnClick(result, imageClickSubject)
     }
 
     private fun initImageOnClick(
         result: StationUiModel,
-        imageClickSubject: PublishSubject<Int>
+        imageClickSubject: PublishSubject<StationUiModel>
     ) {
         binding.root.setOnClickListener {
-            imageClickSubject.onNext(result.id)
+            imageClickSubject.onNext(result)
         }
     }
 

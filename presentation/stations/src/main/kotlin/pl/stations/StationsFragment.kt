@@ -5,12 +5,14 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import pl.architecture.BaseFragment
 import pl.domain.model.StationUiModel
 import pl.presentation.stations.R
 import pl.presentation.stations.databinding.FragmentStationsBinding
+import pl.stations.adapter.StationsAdapter
 import java.util.concurrent.TimeUnit
 
 @SuppressWarnings("TooManyFunctions")
@@ -104,7 +106,9 @@ class StationsFragment : BaseFragment<FragmentStationsBinding>(FragmentStationsB
             adapter.imageClickSubject
                 .throttleFirst(500L, TimeUnit.MILLISECONDS)
                 .subscribe {
-
+                    findNavController().navigate(
+                        StationsFragmentDirections.actionStationsFragmentToStationGraph(it)
+                    )
                 }
         )
     }

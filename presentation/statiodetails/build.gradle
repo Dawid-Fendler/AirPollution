@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace 'pl.presentation.stations'
+    namespace 'com.example.statiodetails'
     compileSdk 33
     buildFeatures {
         viewBinding true
@@ -18,7 +18,6 @@ dependencies {
     implementation project(':core:architecture')
     implementation project(':data')
     implementation project(':domain')
-    implementation project(':presentation:statiodetails')
 
     implementation libs.androidx.appcompat
     implementation libs.androidx.fragment
@@ -27,7 +26,7 @@ dependencies {
     implementation libs.androidx.navigation.fragment
     implementation libs.androidx.navigation.ui
     implementation libs.coil
-    implementation libs.android.swipe.refresh
     implementation libs.hilt.android
+    implementation libs.lottie
     kapt libs.hilt.compiler
 }

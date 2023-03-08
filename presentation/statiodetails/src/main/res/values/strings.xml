@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="air_pollution_level">Poziom zanieczyszczenia w powietrzu</string>
+    <string name="city_full_information">Gmina:%s  Dzielnica:%s  Województwo:%s</string>
+    <string name="station_details_data_loading_error">Could not loading station details</string>
+</resources>
